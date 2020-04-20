@@ -1,0 +1,188 @@
+<style>
+    #navcol {
+        color: white;
+    }
+
+    body {
+        filter: bluescale(100%);
+        background-image: url("home.jpg");
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+
+    .navbar-brand {
+        color: red;
+        font-family: Brush Script MT;
+
+    }
+
+   .d-block {
+        max-height: 500px;
+        max-width: 1000px;
+        align-items: center;
+    }
+    .carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(10%); /* make all photos black and white */
+  width: 100%; /* Set width to 100% */
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  transition: transform 2s ease;
+  transition: transform 2s ease, 
+}
+#cardset{
+    margin-left: 6%;
+}
+
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+#city{
+    interval: 3000;
+}
+</style>
+
+<html>
+
+<head>
+    <title>
+        CONCERT KING
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <!-- navbar  navbar-dark bg-dark -->
+        <a class="navbar-brand" href="#">CONCERT KING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <button class="btn btn-primary">
+                        <a class="nav-link" href="#" id="navcol">Home <span
+                                class="sr-only">(current)</span></a></button>
+                </li>
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <button class="btn btn-primary">
+                        <a class="nav-link" href="#" id="navcol">ACCOUNT INFO <span
+                                class="sr-only">(current)</span></a></button>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1750" id="city">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="hy.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h3>HYDERABAD</h3>
+                <p>We love you HYDERABAD</p>
+              </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="mu.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h3>MUMBAI</h3>
+                <p>MUMBAI is just amazing</p>
+              </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="de.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+            <h3>DELHI</h3>
+                <p>The capital city</p></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+  
+        </a>
+
+    </div>
+<br>
+<br><br>
+<div class="row text-center">
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+        <img src="hy.jpg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">DJ SNAKE</h5>
+          <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes quickly</p>
+          <a href="#" class="btn btn-primary">BOOK PASSES</a>
+        </div>
+      </div>
+      <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+        <img src="mu.jpg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">INDIANA</h5>
+          <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes quickly</p>
+          <a href="#" class="btn btn-primary">BOOK PASSES</a>
+        </div>
+      </div>
+      <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+        <img src="de.jpg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">CAREBIANA</h5>
+          <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes quickly</p>
+          <a href="#" class="btn btn-primary">BOOK PASSES</a>
+        </div>
+      </div>
+      <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+        <img src="x.jpg" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">THE AMERICAN BAND</h5>
+          <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes quickly</p>
+          <a href="#" class="btn btn-primary">BOOK PASSES</a>
+        </div>
+      </div>
+      
+    </div>  
+</body>
+
+</html>
