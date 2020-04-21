@@ -1,0 +1,325 @@
+<style>
+  #navcol {
+    color: white;
+  }
+
+  body {
+    filter: bluescale(100%);
+    background-image: url("https://images4.alphacoders.com/278/thumb-1920-278448.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .navbar-brand {
+    color: red;
+    font-family: Brush Script MT;
+
+  }
+
+  .d-block {
+    max-height: 500px;
+    max-width: 1000px;
+    align-items: center;
+  }
+
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(10%);
+    /* make all photos black and white */
+    width: 100%;
+    /* Set width to 100% */
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    transition: transform 2s ease;
+    transition: transform 2s ease,
+  }
+
+  #cardset {
+    margin-left: 6%;
+    background-image: url("https://lh3.googleusercontent.com/proxy/j0blN5zQx5QbnyLX4Mqkx4tOsSsGqzB9iJDHH2GNfgNIMyIdvspHam-yjH8vayaAX3tYCfvdGa0g61QjY1YKcJ5hUHf3TVX8u6uX81YcQgWZnisY");
+  }
+
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+      /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+
+  .carousel-control-prev-icon {
+    border-radius: 50%;
+
+
+  }
+
+  #dropdown {
+    margin-right: 5%;
+    color: white;
+  }
+
+  #listdrop {
+    margin-left: 83%;
+  }
+
+  #b {
+    width: 220px;
+    height: 185px;
+  }
+
+  .carousel-indicators>li {
+    shape-rendering: crispEdges;
+  }
+</style>
+
+<html>
+
+<head>
+  <title>
+    CONCERT KING - Home
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <!-- navbar  navbar-dark bg-dark -->
+    <a class="navbar-brand" href="#">CONCERT KING</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <button class="btn btn-primary">
+            <a class="nav-link" href="#" id="navcol">Home <span class="sr-only">(current)</span></a></button>
+        </li>
+        <li class="nav-item active">
+
+          <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <button class="btn btn-primary">
+            <a class="nav-link" href="#" id="navcol">ACCOUNT INFO <span class="sr-only">(current)</span></a></button>
+        </li>
+
+
+      </ul>
+
+      <a class="nav-link nav-item dropdown dropdown-toggle" href="#" id="dropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        ACCOUNT_HOLDER
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="listdrop">
+        <a class="dropdown-item" href="#">PROFILE</a>
+        <a class="dropdown-item" href="#">SIGN OUT</a>
+
+
+
+      </div>
+      <a class="gb_D gb_Ra gb_i" href="#" role="button" tabindex="0" aria-expanded="false"><span class="gb_Ia gbii"
+          aria-hidden="true"></span></a>
+  </nav>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="1500" id="city"
+    data-pause="false">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://rollingstoneindia.com/wp-content/uploads/2018/10/Crowd-enjoying-at-Sensation-Rise-2018-960x540.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h3>HYDERABAD</h3>
+          <p>We love you HYDERABAD</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2018/11/concert-goers-hero-image.jpg?itok=gkcEI1PL"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h3>MUMBAI</h3>
+          <p>MUMBAI is just amazing</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/11/concert-audience.jpg"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <h3>DELHI</h3>
+          <p>The capital city</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" id="arrow">
+      <span class="carousel-control-prev-icon" aria-hidden="true" id="arrow"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" id="arrow">
+      <span class="carousel-control-next-icon" aria-hidden="true" id="arrow"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+    </a>
+
+  </div>
+  <br>
+  <br><br>
+  <div class="row text-center">
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img
+        src="https://rollingstoneindia.com/wp-content/uploads/2018/10/Crowd-enjoying-at-Sensation-Rise-2018-960x540.jpg"
+        class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">DJ SNAKE</h5>
+        <h6>HYDERABAD</h6>
+        <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes
+          quickly</p><br><br><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://youngjournalistacademy.com/wp-content/uploads/2016/01/Screen-Shot-2013-12-08-at-12.31.13-AM.png"
+        class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">1-DIRECTION</h5>
+        <h6>COCHIN</h6>
+        <p class="card-text">One direction is know at any pocket of thw world and it is this time we got the oppurtunity
+          to witness the live concert</p><br><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2013/11/concert-audience.jpg" class="card-img-top"
+        id="b">
+      <div class="card-body" id="b">
+        <h5 class="card-title">CARIBIANA</h5>
+        <h6>MUMBAI</h6>
+        <p class="card-text">Got to be some caribbean. This concert has been one of the crowded concerts.
+          Grab your passes now.
+        </p><br><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://www.bworldonline.com/wp-content/uploads/2017/05/concert.jpg" class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">THE AMERICAN BAND</h5>
+        <h6>CHENNAI</h6>
+        <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes
+          quickly</p><br><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div class="row text-center">
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img
+        src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2018/11/concert-goers-hero-image.jpg?itok=gkcEI1PL"
+        class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">INDIANA</h5>
+        <h6>DELHI</h6>
+        <p class="card-text">Here comes the tropical music fest which has been one of the biggest musical concerts in
+          INDIA. Grab your passes now</p>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://www.myfirstevent.in/wp-content/uploads/2019/12/honey-singh-live-concert.png"
+        class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">HONEY SINGH</h5>
+        <h6>CHATTISGARH</h6>
+        <p class="card-text">This is the time to get a bit of the yo yo feels . Come ,see ,witness the Honey Singh
+          troop.</p><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://www.gigx.in/uploads/images/image_750x_5cc1bb7d2b676.jpg" class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">ARJIT SINGH</h5>
+        <h6>JAIPUR</h6>
+        <p class="card-text">He is the face of lastest bollywood songs. His voice has a tender touch over everyones
+          heart.Dont iss him at jaipur.
+        </p>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://images.firstpost.com/wp-content/uploads/2018/04/Papon-int.jpg" class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">KONWAR</h5>
+        <h6>GAUHATI</h6>
+        <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your passes
+          quickly</p><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <div class="row text-center">
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img
+        src="data:image/jpeg;base64,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"
+        class="card-img-top" id="b">
+      <div class="card-body">
+        <h5 class="card-title">TAYLOR SWIFT</h5>
+        <h6>GOA</h6>
+        <p class="card-text">Why should girs have all the fun.Catch of the most famous female singers , Taylor swift at the beach of Goa.</p><br><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+
+    <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+      <img src="https://youngjournalistacademy.com/wp-content/uploads/2016/01/Screen-Shot-2013-12-08-at-12.31.13-AM.png"
+        class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">1-DIRECTION</h5>
+        <h6>HYDERABAD</h6>
+        <p class="card-text">One direction is know at any pocket of thw world and even if you miss them at cochin you still have Hyderabad</p><br><br>
+        <a href="#" class="btn btn-primary">BOOK PASSES</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
