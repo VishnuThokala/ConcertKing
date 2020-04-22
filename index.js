@@ -5,7 +5,7 @@ var LocalStrategy = require('passport-local').Strategy;
 // var ejs = require('ejs');
 var User = require('./models/user');
 var Concert = require('./models/concert')
-const port = process.env.PORT;
+const port = process.env.PORT||3000;
 var app = express()
 app.use(express.static("public/images"));
 
@@ -181,6 +181,6 @@ app.get("/logout", function (req, res) {
     res.render('login', { data: { view: false } });
 });
 
-const listen = app.listen(3000, function (req, res) {
+const listen = app.listen(port, function (req, res) {
     console.log('server started' + listen.address().port);
 })
