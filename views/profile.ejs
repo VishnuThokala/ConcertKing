@@ -1,0 +1,176 @@
+<style>
+    #navcol {
+        color: white;
+    }
+
+    body {
+        filter: bluescale(100%);
+        background-image: url("https://ak4.picdn.net/shutterstock/videos/1016387014/thumb/1.jpg?ip=x480");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .navbar-brand {
+        color: red;
+        font-family: Brush Script MT;
+
+    }
+
+    #dropdown {
+        margin-right: 5%;
+        color: white;
+    }
+
+    #listdrop {
+        margin-left: 83%;
+    }
+
+    .container {
+
+        color: white;
+    }
+
+    h2 {
+
+        color: white;
+    }
+
+    #cardset {
+        margin-left: 10%;
+    }
+
+    hr.new5 {
+  border: 2px solid white;
+
+}
+#profile{
+    margin-top: 10%;
+    width:230px;
+    height:230px;
+}
+s{
+   
+    color:gray;
+}
+</style>
+<html>
+
+<head>
+    <title>
+        CONCERT KING - profile
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-expand navbar-dark bg-primary navbar-fixed-top">
+        <!-- navbar  navbar-dark bg-dark -->
+        <a class="navbar-brand" href="#">CONCERT KING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="/home" id="navcol">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="/profile" id="navcol">ACCOUNT INFO <span class="sr-only">(current)</span></a>
+                </li>
+
+
+            </ul>
+
+            <a class="nav-link nav-item dropdown dropdown-toggle" href="#" id="dropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ACCOUNT_HOLDER
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="listdrop">
+                <a class="dropdown-item" href="/profile">PROFILE</a>
+                <a class="dropdown-item" href="/logout">SIGN OUT</a>
+
+
+
+
+    </nav>
+    <div class="container" style="margin-top:60px">
+        <div class="row">
+            <div class="col-sm-6">
+                    <img src="https://www.americanaircraftsales.com/wp-content/uploads/2016/09/no-profile-img.jpg"
+                        class="card-img-top rounded"  id="profile">
+   
+            </div>
+           
+            <div class="col-sm-6">
+                <h2>YOUR PROFILE</h2>
+                <h5>DETAILS</h5><br>
+                <h6>USER NAME:</h6>
+                <p> <%=data.username%></p><br>
+                <h6>REGISTERED EMAIL ADDRESS:</h6>
+                <p> <%=data.email%></p><br>
+                <h6>ACCOUNT SINCE</h6>
+                <p>23/04/2020</p><br>
+                <p></p>
+            </div>
+            <br>
+        </div>
+    </div>
+    <hr class="new5">
+    <a href= "#" class="btn btn-primary">BOOKED PASSES</a>
+    <div class="row text-center">
+        <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+            <img src="https://rollingstoneindia.com/wp-content/uploads/2018/10/Crowd-enjoying-at-Sensation-Rise-2018-960x540.jpg"
+                class="card-img-top">
+            <div class="card-body">
+             <s>  <h5 class="card-title"><DJ SNAKE></h5>
+                <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your
+                    passes
+                    quickly</p></s> <br><br>
+                <a href="#" class="btn btn-danger">VISITED CONCERTS</a>
+            </div>
+        </div>
+        <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+            <img
+              src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2018/11/concert-goers-hero-image.jpg?itok=gkcEI1PL"
+              class="card-img-top">
+            <div class="card-body">
+                <s> <h5 class="card-title">INDIANA</h5>
+              <p class="card-text">Here comes the tropical music fest which has been one of the biggest musical concerts in
+                INDIA. Grab your passes now</p></s><br>
+                <a href="#" class="btn btn-danger">VISITED CONCERTS</a>
+            </div>
+          </div>
+    </div>
+
+    <br>
+    <div class="jumbotron text-center" style="margin-bottom:0;opacity: 0.7; height:170px;" >
+      <p>THANKS FOR YOU CONTINUOUS SUPPORT<br>CONTACT US:2323232322<br>OUR EMAIL:concertkin007@gmail.com<br>ADDERSS:pt no.420,near asdj busstop,mumbai highway,mumbai</p>
+    </div>
+
+</body>
+
+</html>

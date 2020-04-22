@@ -1,0 +1,157 @@
+<style>
+    #navcol {
+      color: white;
+    }
+  
+    body {
+      filter: bluescale(100%);
+      background-image: url("https://images4.alphacoders.com/278/thumb-1920-278448.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  
+    .navbar-brand {
+      color: red;
+      font-family: Brush Script MT;
+  
+    }
+  
+    .d-block {
+      max-height: 500px;
+      max-width: 1000px;
+      align-items: center;
+    }
+  
+    .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(10%);
+      /* make all photos black and white */
+      width: 100%;
+      /* Set width to 100% */
+      margin-top: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3%;
+      transition: transform 2s ease;
+      transition: transform 2s ease,
+    }
+  
+    #cardset {
+      margin-left: 6%;
+      background-image: url("https://lh3.googleusercontent.com/proxy/j0blN5zQx5QbnyLX4Mqkx4tOsSsGqzB9iJDHH2GNfgNIMyIdvspHam-yjH8vayaAX3tYCfvdGa0g61QjY1YKcJ5hUHf3TVX8u6uX81YcQgWZnisY");
+    }
+  
+    .carousel-caption h3 {
+      color: #fff !important;
+    }
+  
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+      }
+    }
+  
+    .carousel-control-prev-icon {
+      border-radius: 50%;
+  
+  
+    }
+  
+    #dropdown {
+      margin-right: 5%;
+      color: white;
+    }
+  
+    #listdrop {
+      margin-left: 83%;
+    }
+  
+    #b {
+      width: 220px;
+      height: 185px;
+    }
+  
+    .carousel-indicators>li {
+      shape-rendering: crispEdges;
+    }
+  </style>
+  
+  <html>
+  
+  <head>
+    <title>
+      CONCERT KING - Home
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+  
+  
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+      <!-- navbar  navbar-dark bg-dark -->
+      <a class="navbar-brand" href="#">CONCERT KING</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <button class="btn btn-primary">
+              <a class="nav-link" href="#" id="navcol">Home <span class="sr-only">(current)</span></a></button>
+          </li>
+          <li class="nav-item active">
+  
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <button class="btn btn-primary">
+              <a class="nav-link" href="#" id="navcol">ACCOUNT INFO <span class="sr-only">(current)</span></a></button>
+          </li>
+  
+  
+        </ul>
+  
+        <a class="nav-link nav-item dropdown dropdown-toggle" href="#" id="dropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          ACCOUNT_HOLDER
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="listdrop">
+          <a class="dropdown-item" href="#">PROFILE</a>
+          <a class="dropdown-item" href="#">SIGN OUT</a>
+  
+  
+  
+               
+      <div class="card col-sm-2" style="width: 18rem;" id="cardset">
+        <img src="https://youngjournalistacademy.com/wp-content/uploads/2016/01/Screen-Shot-2013-12-08-at-12.31.13-AM.png"
+          class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><%=udata.username%></h5>
+          <h6><%=udata.email%></h6>
+          <p class="card-text">One direction is know at any pocket of thw world and even if you miss them at cochin you still have Hyderabad</p><br><br>
+          <a href="/booktickets/10" class="btn btn-primary">BOOK PASSES</a>
+        </div>
+      </div>
+  
+    </div>
+  </body>
+  
+  </html>
