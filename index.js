@@ -8,13 +8,13 @@ var Concert = require('./models/concert')
 const port = process.env.PORT||3000;
 var app = express()
 app.use(express.static("public/images"));
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public/images"));
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/noted', { useNewUrlParser: true }).then(() => { console.log("successful db connection") }).catch((err) => { console.log(err) });
+mongoose.connect('mongodb+srv://vishnuvardhan:vishnu@cluster0-mro7x.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true', 
+{ useNewUrlParser: true , useUnifiedTopology: true,serverSelectionTimeoutMS: 5000 ,useCreateIndex:true,}).then(() => { console.log("successful db connection") }).catch((err) => { console.log(err) });
 const dbo = mongoose.Connection;
 mongoose.set('useFindAndModify', false);
 app.set("view engine", 'ejs');
