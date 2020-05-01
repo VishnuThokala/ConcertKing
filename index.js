@@ -14,8 +14,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 mongoose.connect('mongodb+srv://vishnuvardhan:vishnu@cluster0-mro7x.mongodb.net/test?retryWrites=true&w=majority&useNewUrlParser=true&useUnifiedTopology=true', 
-{ useNewUrlParser: true , useUnifiedTopology: true,serverSelectionTimeoutMS: 5000 ,useCreateIndex:true,}).then(() => { console.log("successful db connection") }).catch((err) => { console.log(err) });
-const dbo = mongoose.Connection;
+{ useNewUrlParser: true , useUnifiedTopology: true ,useCreateIndex:true,}).then(() => { console.log("successful db connection") }).catch((err) => { console.log(err) });
 mongoose.set('useFindAndModify', false);
 app.set("view engine", 'ejs');
 app.use(require('express-session')({
@@ -124,10 +123,33 @@ app.get('/bookedpasses/',isLoggedIn,function(req,res){
           res.render('home')
       }
      });})
-
+//after clicking bookpasses from home page 
 app.get('/booktickets/:id/',isLoggedIn,function(req,res){
-    console.log(req.user.cid)
+    console.log("homepage"+req.params.id)
+//     var c =new Concert(
+        
+// {
+//     "cid": 5,
+//     "band":"",
+//     "about": " One direction is know at any pocket of the world and it is this time we got the oppurtunity to witness the live concert",
+//     "date": "29-04-2020",
+//     "cost": "2600",
+//     "place": "Parade Grounds  ,secundrabad , Mumbai",
+//     "image": "https://youngjournalistacademy.com/wp-content/uploads/2016/01/Screen-Shot-2013-12-08-at-12.31.13-AM.png ",
+//     "passno":19,
+//     "passesRemaining": 30,
+//     "discount": "25%"
+//   })
+//         c.save(function(err,res){
+//             if(err){
+//                 console.log(err);
+//             }
+//             else{
+//                 console.log(res+" \n"+"saved successfully ")
+//             }
+//         })
   Concert.find({cid:req.params.id},(err,concert)=>{
+      
       if(err){
           console.log(err)
           res.render('home');
@@ -136,17 +158,20 @@ app.get('/booktickets/:id/',isLoggedIn,function(req,res){
           
                res.render('tiles',{concert:concert})
       } else {
-        console.log('didnot open')
+          console.log(concert.length)
+        console.log('concert didnot open')
         
         res.render('home')
     }
     
   });})
+//after clicking book passes in tiles page
+app.get('/get:cid',isLoggedIn, function(req,res){
+    console.log("after clicking tiles bp ")
+    console.log("req.params = "+req.params)
+    console.log("req.params.cid = "+req.params.cid)
 
-app.get('/:cid',isLoggedIn,function(req,res){
-    
-    console.log(req.params.cid)
-     Concert.findOneAndUpdate({cid:req.params.cid},{$inc :{'passesRemaining' : -1 , 'passno':1}}, {
+   Concert.findOneAndUpdate({cid:req.params.cid},{$inc :{'passesRemaining' : -1 , 'passno':1}}, {
         new: true
       },function(err,result){
           if(err){
@@ -156,7 +181,7 @@ app.get('/:cid',isLoggedIn,function(req,res){
           
           else{
               console.log(result)
-              User.findOneAndUpdate({username:req.user.username},{ 'passes':result}, {
+              User.findOneAndUpdate({username:req.user.username},{"$push" : {'passes':result}}, {
                 new: true
               },function(err,resul){
                 if(err){
@@ -164,7 +189,21 @@ app.get('/:cid',isLoggedIn,function(req,res){
                     res.render('home')
                 }
                 else{
-                    console.log(resul)
+                    console.log(resul.passes)
+                    console.log("my passes")
+                    for(var i=0;i!=req.user.passes.length;i++){
+                    Concert.findById(req.user.passes[i],function(err,cs){
+                        if(err){
+                            console.log(err)
+                        }
+                        console.log("pass "+i)
+                        console.log(cs)
+                        
+                    })
+                    console.log("last")
+
+                    
+                }  
                 }
             });
            res.render('profile',{data :req.user});

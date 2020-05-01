@@ -1,18 +1,12 @@
 
 {
-  "cid": {
-      "$numberInt": "10"
-  },
+  "cid": 2,
   "about": " One direction is know at any pocket of the world and it is this time we got the oppurtunity to witness the live concert",
-  "date": "22-04-2020",
+  "date": "29-04-2020",
   "cost": "2600",
-  "place": "Parade Grounds  ,secundrabad , Hyderabad",
+  "place": "Parade Grounds  ,secundrabad , Mumbai",
   "image": "https://youngjournalistacademy.com/wp-content/uploads/2016/01/Screen-Shot-2013-12-08-at-12.31.13-AM.png ",
-  "passno": {
-      "$numberInt": "19"
-  },
-  "passesRemaining": {
-      "$numberInt": "7"
-  },
+  "passno":19,
+  "passesRemaining": 7,
   "discount": "25%"
 }

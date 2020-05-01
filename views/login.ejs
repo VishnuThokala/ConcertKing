@@ -141,7 +141,7 @@ h2{
                 <label for="exampleInputEmail1"><b>User Name<b></label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp "
                     placeholder="your name" name="username">
-                    <%if(data.view){%>
+                    <%if(data.view!=null){%>
                         <small><%=data.msg1%></small>
                         <% } %>
                         
@@ -149,7 +149,7 @@ h2{
             <div class="form-group">
                 <label for="exampleInputPassword1" placeholder="Password"><b>Password<b></label>
                 <input type="password" class="form-control" id="exampleInputPassword1" name="password">
-                <%if(data.view){%>
+                <%if(data.view!=null){%>
                     <small><%=data.msg%></small>
                     <% } %>
             </div>

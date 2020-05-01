@@ -139,9 +139,13 @@ s{
             <br>
         </div>
     </div>
+    
+    
     <hr class="new5">
     <a href= "#" class="btn btn-primary">BOOKED PASSES</a>
+    
     <div class="row text-center">
+        <%for(var i=0;i!=data.passes.length;i++){ %>
         <div class="card col-sm-2" style="width: 18rem;" id="cardset">
             <img src="https://rollingstoneindia.com/wp-content/uploads/2018/10/Crowd-enjoying-at-Sensation-Rise-2018-960x540.jpg"
                 class="card-img-top">
@@ -150,22 +154,12 @@ s{
                 <p class="card-text">one of the most famous concerts as well as much awaited one is here. So grab your
                     passes
                     quickly</p></s> <br><br>
-                <a href="#" class="btn btn-danger">VISITED CONCERTS</a>
+                <a href="#" class="btn btn-danger"><%=data.passes[i]%></a>
             </div>
         </div>
-        <div class="card col-sm-2" style="width: 18rem;" id="cardset">
-            <img
-              src="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2018/11/concert-goers-hero-image.jpg?itok=gkcEI1PL"
-              class="card-img-top">
-            <div class="card-body">
-                <s> <h5 class="card-title">INDIANA</h5>
-              <p class="card-text">Here comes the tropical music fest which has been one of the biggest musical concerts in
-                INDIA. Grab your passes now</p></s><br>
-                <a href="#" class="btn btn-danger">VISITED CONCERTS</a>
-            </div>
-          </div>
-    </div>
+       <%}%>
 
+    <br>
     <br>
     <div class="jumbotron text-center" style="margin-bottom:0;opacity: 0.7; height:170px;" >
       <p>THANKS FOR YOU CONTINUOUS SUPPORT<br>CONTACT US:2323232322<br>OUR EMAIL:concertkin007@gmail.com<br>ADDERSS:pt no.420,near asdj busstop,mumbai highway,mumbai</p>
